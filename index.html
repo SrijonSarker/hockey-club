@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey Club</title>
+   <!-- tailwind and daisy UI -->
+   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+   <script src="https://cdn.tailwindcss.com"></script>
+   <!-- manrope google font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+   <!-- font awesome -->
+   <script src="https://kit.fontawesome.com/d7b7563d24.js" crossorigin="anonymous"></script>
+   <!-- tailwind custom color -->
+   <script>
+       tailwind.config = {
+           theme: {
+               extend: {
+                   colors: {
+                       'primary': '#FF4240',
+                    
+                   }
+               }
+           }
+       }
+   </script>
+   <style>
+       .font-manrope {
+           font-family: 'Manrope', sans-serif;
+       }
+   </style>
+</head>
+<body class="font-manrope container mx-auto">
+  <nav class="my-14">
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li>
+                <a>About</a> 
+              </li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class=" text-2xl font-extrabold ">Hockey<span class="text-primary">'</span>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+              <li>
+                <a>About</a> 
+              </li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+            <i  class="fa-solid fa-magnifying-glass pr-3 hidden lg:block"></i> 
+          <a class="btn bg-primary text-white ">Get Ticket</a>
+        </div>
+      </div>
+  </nav>
+   <main class="md:container md:mx-auto">
+
+    <!-- banner section------------------- -->
+    <div class="h-[600px] rounded-2xl">
+        <div class="carousel w-full h-[550px]">
+            <div id="slide1" class="carousel-item relative w-full bg-lightgray bg-cover bg-no-repeat">
+              <img src="./Images/1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="./Images/close-up-ice-hockey-stick-ice-rink-position-hit-hockey-puck.jpg" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide1" class="btn btn-circle">❮</a> 
+                  <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+              </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="./Images/istockphoto-1332278067-612x612.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+           
+            </div>
+          </div>
+
+
+          
+    </div>
+
+   </main>
+   <footer>
+
+   </footer> 
+</body>
+</html>
